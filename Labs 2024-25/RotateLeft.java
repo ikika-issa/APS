@@ -1,3 +1,6 @@
+//n is inputed and then n numbers in a doubly-linked list. 
+//Afterwards, k is inputed. Rotate all the elements in the list k times.
+
 import java.util.Scanner;
 
 class DLLNode<E> {
