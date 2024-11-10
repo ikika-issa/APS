@@ -1,3 +1,3 @@
-Algoritmi i Podatochni Strukturi
+# Algorithms and Data Structures
 
-Resheni zadachi od laboratoriski vezbi i zadachi za vezbanje po Algoritmi i Podatochni Strukturi.
+Solved problems from labs and some problems from the internet. 🐈‍⬛
