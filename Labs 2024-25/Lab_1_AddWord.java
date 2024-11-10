@@ -200,8 +200,6 @@ public class Main{
                 }
                 word = word.succ;
             }
-
-            //System.out.println(list);
         }
         else{
             return;
