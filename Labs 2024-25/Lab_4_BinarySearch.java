@@ -1,3 +1,4 @@
+//Lab 4
 //We are given an array of N numbers. Using the method "divide and conquer" write a binary search algorithm that searches for a given number M. 
 //If the number is found, print the position of the number in the array. If the number is not in the array, print "Ne postoi".
 
