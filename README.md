@@ -3,8 +3,10 @@
 Solved problems from labs and some problems from the internet. 🐈‍⬛
 The types of problems that are covered:
  1. Lists
- 2. Algorithm techniques - Search
- 3. Algorithm techniques - Sort
- 4. Onedimensional data structures
- 5. Hash tables
- 6. Trees
+    1.1. Single-linked lists
+    1.2. Doubly-linked lists
+ 3. Algorithm techniques - Search
+ 4. Algorithm techniques - Sort
+ 5. Onedimensional data structures
+ 6. Hash tables
+ 7. Trees
