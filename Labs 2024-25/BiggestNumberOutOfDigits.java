@@ -12,7 +12,7 @@ public class BiggestNumberOutOfDigits {
             str[i] = String.valueOf(n[i]);
         }
 
-        Arrays.sort(str, (a,b)->(b + a).compareTo(a+b));
+        Arrays.sort(str, (a,b)->(b + a).compareTo(a + b));
 
         if(str[0].equals("0")){
             System.out.println(str[0]);
