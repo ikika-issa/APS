@@ -1,3 +1,4 @@
+//Lab 1
 //You are given a single linked list with String nodes. 
 //Additionally, you are given one more integer L. You need to delete every node from the list that contains a String with less than L characters.
 
