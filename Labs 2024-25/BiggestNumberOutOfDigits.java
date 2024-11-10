@@ -1,6 +1,7 @@
+//We are given N digits. Write an algorithm that composes the largest possible number from those digits.
+
 import java.util.Arrays;
 import java.util.Scanner;
-
 
 public class BiggestNumberOutOfDigits {
 
