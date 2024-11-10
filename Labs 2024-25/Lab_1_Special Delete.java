@@ -187,66 +187,40 @@ class SLL<E> {
 }
 
 public class NodeLength<E> {
+    public static void DeleteSpecial(SLL<String> list, int k){
+        SLLNode<String> word = list.getFirst();
+        SLLNode<String> delete = null;
 
-    //TODO: implement method
-    public static void specialDelete(SLL<String> list, int m) {
-        SLLNode<String> head = list.getFirst();
-
-        //Edge case: if the list is empty or has only one node, do nothing
-        if (head == null || head.succ == null) {
-            return;
-        }
-
-        SLLNode<String> current = head;
-        SLLNode<String> lastMatch = null;
-        SLLNode<String> lastMatchPrev = null;
-        SLLNode<String> prev = null;
-
-        // Traverse to find the last node with a string of length m
-        while (current != null) {
-            if (current.element.length() == m) {
-                lastMatch = current;
-                lastMatchPrev = prev;
+        if(list.size() > 1){
+            while(word != null){
+                if(word.element.length() < k){
+                    delete = word;
+                    list.delete(delete);
+                }
+                word = word.succ;
             }
-            prev = current;
-            current = current.succ;
+
+            System.out.println(list);
+        }
+        else{
+            System.out.println(list);
         }
 
-        //If no matching node found, return
-        if (lastMatch == null) {
-            return;
-        }
-
-        //If the last matching node is already at the head, no need to move
-        if(lastMatch == head) {
-            return;
-        }
-
-        //Detach the last matching node from its current position
-        if (lastMatchPrev != null) {
-            lastMatchPrev.succ = lastMatch.succ;
-        }
-
-        //Move the last matching node to the front
-        lastMatch.succ = head;
-        list.insertFirst(lastMatch.element);
     }
 
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
 
-        int n = input.nextInt();
-        SLL<String> list = new SLL<>();
+        int n = sc.nextInt();
+        SLL<String> words = new SLL<>();
 
         for(int i = 0; i < n; i++){
-            list.insertLast(input.next());
+            words.insertLast(sc.next());
         }
 
-        int m = input.nextInt();
-        System.out.println(list);
+        int k = sc.nextInt();
 
-        specialDelete(list, m);
-        System.out.println(list);
+        System.out.println(words);
+        DeleteSpecial(words, k);
     }
-
 }
