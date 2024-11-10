@@ -1,3 +1,4 @@
+//Lab 2
 //For a given doubly-linked list with N integers, you need to find the number of elements such that the average of all elements 
 //before it is bigger than the average of all elements after it in the list. 
 
