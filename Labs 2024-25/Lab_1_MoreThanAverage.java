@@ -1,3 +1,4 @@
+//Lab 1
 //For a given array with N integers, all the elements that are lower than the average of the whole array need to be deleted. 
 //For example for the array 1, 2, 3, 4, 5 the average is (1 + 2 + 3 + 4 + 5) / 5 = 15 / 5 = 3 which means that the elements 1 and 2 should be deleted, 
 //so the array after the transformation will be 3, 4, 5.
