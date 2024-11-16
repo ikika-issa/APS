@@ -1,6 +1,5 @@
 //Write an algorithm that will calculate (evaluate) a mathematical expression that consists of numbers and operations for adding (+) and multiplying (*).
 
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
