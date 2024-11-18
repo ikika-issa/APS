@@ -38,7 +38,7 @@ public class TrainPlatforms {
 
 
         while (i < n && j < n) {
-            if (arrivals[i] < departures[j]) {
+            if (arrivals[i] <= departures[j]) {
                 platformCount++;
                 
                 maxPlatforms = Math.max(maxPlatforms, platformCount);
