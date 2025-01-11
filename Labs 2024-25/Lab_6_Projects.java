@@ -172,7 +172,16 @@ public class Solution {
             String[] input = line.split(" ");
             Person person = new Person(input[0], Integer.parseInt(input[1]));
             Project project = new Project(Integer.parseInt(input[2]), Integer.parseInt(input[3]));
-            table.insert(person, project);
+            SLLNode<MapEntry<Person, Project>> curr = table.search(person);
+            if(curr != null){ //checks if there is someone at that position
+                int salary1 = curr.element.value.salary * curr.element.value.hours; //the person in the table
+                int salary = project.salary * project.hours; //the new person
+                if(salary > salary1){
+                    table.insert(person, project);
+                }
+            }else{
+                table.insert(person, project);
+            }
         }
 
         System.out.println(table);
