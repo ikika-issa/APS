@@ -179,7 +179,7 @@ class SLL<E> {
     }
 }
 
-public class SLL_MergeSortedLists{
+public class SLL_DeleteElement{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
