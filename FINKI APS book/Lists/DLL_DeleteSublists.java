@@ -200,7 +200,7 @@ class DLL<E> {
     }
 }
 
-public class Palindrom{
+public class DLL_DeleteSublists{
 
     public static void removeSublist(DLL<Integer> list1, DLL<Integer> list2) {
         DLLNode<Integer> current = list1.getFirst();
