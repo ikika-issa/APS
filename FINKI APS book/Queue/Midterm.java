@@ -111,7 +111,7 @@ class LinkedQueue<E> implements Queue<E> {
 }
 
 
-public class Trains {
+public class Midterm {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         LinkedQueue<String> queue = new LinkedQueue<>(); //final queue
