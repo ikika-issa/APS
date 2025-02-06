@@ -255,7 +255,7 @@ class BTree<E> {
 
 }
 
-public class StringTree{
+public class SumOfPaths {
     public static int sumRootToLeaf(BNode<Integer> node, int currentSum){
         if(node == null){
             return 0;
