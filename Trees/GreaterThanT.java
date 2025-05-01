@@ -1,25 +1,14 @@
-// BinarySearchTree class
+/*
+You are given a binary search tree with N integers. Write a function that, for a binary search tree and a selected element T from the tree will: you will find how many elements in the tree are greater than T
+You will need to use that function Q times when building the tree.
+The input will contain N+Q rows of the type 
+insert value - You need to insert the value value into the tree.
+ask value- You need to answer how many elements in the tree have a value greater than value
+*/
 
 import java.util.Random;
 import java.util.Scanner;
 
-//
-// CONSTRUCTION: with no initializer
-//
-// ******************PUBLIC OPERATIONS*********************
-// void insert( x )       --> Insert x
-// void remove( x )       --> Remove x
-// Comparable find( x )   --> Return item that matches x
-// Comparable findMin( )  --> Return smallest item
-// Comparable findMax( )  --> Return largest item
-// boolean isEmpty( )     --> Return true if empty; else false
-// void makeEmpty( )      --> Remove all items
-// void printTree( )      --> Print tree in sorted order
-/**
- * Implements an unbalanced binary search tree.
- * Note that all "matching" is based on the compareTo method.
- * @author Mark Allen Weiss
- */
 class BinarySearchTree<E extends Comparable<E>> {
 
     /** The tree root. */
